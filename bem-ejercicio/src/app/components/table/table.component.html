@@ -1,0 +1,36 @@
+<section class="visualizar" >
+  <button class="visualizar__btn" (click)="mostrarOcultar()">
+    {{ mensaje_enlace }}
+  </button>
+</section>
+
+<section *ngIf="mostrar" class="comTab">
+    <table class="comTap__table table2">
+        <thead class="table2__header">
+            <tr class="table2__row">
+                <th class="table2__header">Nombre</th>
+                <th class="table2__header">Apellido</th>
+                <th class="table2__header">Edad</th>
+              </tr>
+        </thead>
+        <tbody class="table2__body">
+            <tr class="table2__row">
+              <td class="table2__cell">Camilo</td>
+              <td class="table2__cell">Garzón</td>
+              <td class="table2__cell">25</td>
+            </tr>
+            <tr class="table2__row">
+              <td class="table2__cell">María</td>
+              <td class="table2__cell">González</td>
+              <td class="table2__cell">30</td>
+            </tr>
+            <tr class="table2__row">
+              <td class="table2__cell">Luis</td>
+              <td class="table2__cell">Fernández</td>
+              <td class="table2__cell">40</td>
+            </tr>
+          </tbody>
+
+    </table>
+
+</section>
